@@ -1,0 +1,138 @@
+/* src/pages/OrgChart.css */
+
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.org-chart h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:first-of-type {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+button:last-of-type {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button:last-of-type:hover {
+    background-color: #218838;
+}
+
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.employee-card {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.add-employee-form,
+.filter-menu {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee-form input,
+.add-employee-form select,
+.filter-menu input,
+.filter-menu select {
+    margin: 8px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.add-employee-form input:focus,
+.add-employee-form select:focus,
+.filter-menu input:focus,
+.filter-menu select:focus {
+    border-color: #007bff;
+}
+
+.add-employee-form button,
+.filter-menu button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.add-employee-form button:hover,
+.filter-menu button:hover {
+    background-color: #0056b3;
+}
+
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

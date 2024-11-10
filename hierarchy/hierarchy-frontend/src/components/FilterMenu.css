@@ -1,0 +1,102 @@
+/* src/components/FilterMenu.css */
+
+.filter-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures overlay is above other content */
+}
+
+.filter-menu {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.filter-menu h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.filter-menu label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.filter-menu input[type="number"],
+.filter-menu select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease;
+}
+
+.filter-menu input[type="number"]:focus,
+.filter-menu select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.filter-menu button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.filter-menu button.apply-filter {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.filter-menu button.apply-filter:hover {
+    background-color: #218838;
+}
+
+.filter-menu button.clear-filter {
+    background-color: #dc3545;
+    color: #ffffff;
+    margin-top: -5px;
+}
+
+.filter-menu button.clear-filter:hover {
+    background-color: #c82333;
+}
+
+.filter-menu button.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #555;
+}
+
+.filter-menu button.close-button:hover {
+    color: #333;
+}

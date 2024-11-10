@@ -1,0 +1,9 @@
+/* src/App.css */
+.app {
+  display: flex;
+}
+
+.org-chart {
+  flex: 1;
+  padding: 20px;
+}
